@@ -1,21 +1,13 @@
 import React from 'react';
-import Camera from 'react-camera-pro';
+import CameraApp from './CameraApp';
 
-function App() {
+const App = () => {
   return (
     <div>
-      <h1>Camera App</h1>
-      <Camera
-        front={false}
-        width="100%"
-        height="auto"
-        onTakePhoto={dataUri => {
-          // Handle the captured photo data here
-          console.log(dataUri);
-        }}
-      />
+      <h1>My App</h1>
+      <CameraApp />
     </div>
   );
-}
+};
 
 export default App;
